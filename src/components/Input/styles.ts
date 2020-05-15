@@ -10,18 +10,12 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   background: #232129;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 16px;
   width: 100%;
-  display: flex;
-  align-items: center;
-
   border: 2px solid #232129;
   color: #666360;
 
-  & + div {
-    margin-top: 10px;
-  }
 
   ${props =>
     props.isErrored &&
@@ -41,6 +35,13 @@ export const Container = styled.div<ContainerProps>`
     css`
       color: #ff9000;
     `}
+    display: flex;
+    align-items: center;
+
+    & + div {
+      margin-top: 10px;
+    }
+
 
   input {
     flex: 1;
@@ -67,7 +68,7 @@ export const Error = styled(Tooltip)`
     background: #c53030;
     color: #fff;
 
-    &::before {
+    &:before {
       border-color: #c53030 transparent;
     }
   }
