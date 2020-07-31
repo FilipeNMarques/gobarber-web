@@ -5,7 +5,6 @@ import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import { useHistory, useLocation } from 'react-router-dom';
 
-import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
 import logoImg from '../../assets/logo.svg';
 import { Container, Content, Background, AnimationContainer } from './styles';
