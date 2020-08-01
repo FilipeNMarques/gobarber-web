@@ -15,7 +15,12 @@ export const Container = styled.div<ContainerProps>`
   width: 100%;
   border: 2px solid #232129;
   color: #666360;
-
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  & + div {
+    margin-top: 8px;
+  }
 
   ${props =>
     props.isErrored &&
@@ -27,7 +32,7 @@ export const Container = styled.div<ContainerProps>`
     props.isFocused &&
     css`
       color: #ff9000;
-      border-color: #ff9000;
+      border-color: #ff9000;a
     `}
 
   ${props =>
@@ -51,6 +56,9 @@ export const Container = styled.div<ContainerProps>`
     &::placeholder {
       color: #666360;
     }
+    & + input {
+      margin-top: 8px;
+    }
   }
   svg {
     margin-right: 16px;
@@ -61,14 +69,12 @@ export const Error = styled(Tooltip)`
   height: 20px;
   margin-left: 16px;
   svg {
-    margin: 0;
+    margin-right: 0;
   }
-
   span {
     background: #c53030;
     color: #fff;
-
-    &:before {
+    &::before {
       border-color: #c53030 transparent;
     }
   }

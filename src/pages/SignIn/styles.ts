@@ -5,7 +5,6 @@ import signInBg from '../../assets/sign-in-background.png';
 
 export const Container = styled.div`
   height: 100vh;
-
   display: flex;
   align-items: stretch;
 `;
@@ -17,16 +16,19 @@ export const Content = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 700px;
+  padding: 10px 0;
 `;
 
 const appearFromLeft = keyframes`
   from {
     opacity: 0;
     transform: translateX(-50px)
+
+
   }
   to {
     opacity: 1;
-    transform: translateX(0)
+    transform: translateX(0);
   }
 `;
 
@@ -40,7 +42,7 @@ export const AnimationContainer = styled.div`
 
   form {
     margin: 80px 0;
-    width: 300px;
+    width: 340px;
     text-align: center;
 
     h1 {

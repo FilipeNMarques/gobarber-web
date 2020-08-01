@@ -31,7 +31,7 @@ const SignIn: React.FC = () => {
         formRef.current?.setErrors({});
         const schema = Yup.object().shape({
           email: Yup.string()
-            .required('Eamil é obrigatório')
+            .required('E-mail é obrigatório')
             .email('Digite um email válido'),
           password: Yup.string().min(6, 'A senha, precisamos dela :)'),
         });
