@@ -147,6 +147,10 @@ export const Section = styled.section`
     border-bottom: 1px solid #3e3b47;
     display: block;
   }
+
+  > p {
+    color: #999591;
+  }
 `;
 
 export const Appointment = styled.div`
